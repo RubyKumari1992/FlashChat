@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomMessageCell" customModule="FlashChat" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="5Ec-WN-8Fe" customClass="CustomMessageCell" customModule="FlashChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="482" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJ1-xh-6yw">
+                    <rect key="frame" x="0.0" y="0.0" width="482" height="50"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="male" translatesAutoresizingMaskIntoConstraints="NO" id="3lR-nj-WLR">
+                            <rect key="frame" x="10" y="10" width="20" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="UYT-bx-ge3"/>
+                                <constraint firstAttribute="width" constant="20" id="hSA-cf-McY"/>
+                            </constraints>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmR-BN-L2x">
+                            <rect key="frame" x="45" y="0.0" width="437" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Btw-G8-Bnw">
+                                    <rect key="frame" x="10" y="5" width="427" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LHY-il-2QT">
+                                    <rect key="frame" x="10" y="31" width="427" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="LHY-il-2QT" firstAttribute="leading" secondItem="Btw-G8-Bnw" secondAttribute="leading" id="KTb-Ad-WKn"/>
+                                <constraint firstAttribute="bottom" secondItem="LHY-il-2QT" secondAttribute="bottom" constant="5" id="R49-qF-zsr"/>
+                                <constraint firstItem="Btw-G8-Bnw" firstAttribute="top" secondItem="kmR-BN-L2x" secondAttribute="top" id="SQp-5H-JCv"/>
+                                <constraint firstItem="LHY-il-2QT" firstAttribute="top" secondItem="Btw-G8-Bnw" secondAttribute="bottom" id="dvq-VH-pgz"/>
+                                <constraint firstItem="LHY-il-2QT" firstAttribute="trailing" secondItem="Btw-G8-Bnw" secondAttribute="trailing" id="eBZ-yQ-Z3Q"/>
+                                <constraint firstAttribute="trailing" secondItem="Btw-G8-Bnw" secondAttribute="trailing" id="hmt-Jv-grH"/>
+                                <constraint firstItem="Btw-G8-Bnw" firstAttribute="leading" secondItem="kmR-BN-L2x" secondAttribute="leading" constant="10" id="wpZ-Tz-IPK"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="kmR-BN-L2x" secondAttribute="bottom" id="6LN-Yx-bjG"/>
+                        <constraint firstItem="kmR-BN-L2x" firstAttribute="top" secondItem="IJ1-xh-6yw" secondAttribute="top" id="VhT-Vv-reR"/>
+                        <constraint firstItem="3lR-nj-WLR" firstAttribute="top" secondItem="IJ1-xh-6yw" secondAttribute="top" constant="10" id="axH-lM-ve1"/>
+                        <constraint firstAttribute="bottom" secondItem="3lR-nj-WLR" secondAttribute="bottom" constant="35" id="bgX-K1-ypI"/>
+                        <constraint firstItem="3lR-nj-WLR" firstAttribute="leading" secondItem="IJ1-xh-6yw" secondAttribute="leading" constant="10" id="gQu-YD-EjJ"/>
+                        <constraint firstAttribute="trailing" secondItem="kmR-BN-L2x" secondAttribute="trailing" id="ney-aS-7q8"/>
+                        <constraint firstItem="kmR-BN-L2x" firstAttribute="leading" secondItem="3lR-nj-WLR" secondAttribute="trailing" constant="15" id="onW-bI-PiF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IJ1-xh-6yw" firstAttribute="top" secondItem="5Ec-WN-8Fe" secondAttribute="top" id="XQo-Xh-rKe"/>
+                <constraint firstAttribute="bottom" secondItem="IJ1-xh-6yw" secondAttribute="bottom" id="gWY-kO-Dq6"/>
+                <constraint firstItem="IJ1-xh-6yw" firstAttribute="leading" secondItem="5Ec-WN-8Fe" secondAttribute="leading" id="hCO-Xx-kUn"/>
+                <constraint firstItem="IJ1-xh-6yw" firstAttribute="trailing" secondItem="8vX-rg-dwX" secondAttribute="trailing" id="lcT-1v-TWb"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="8vX-rg-dwX"/>
+            <connections>
+                <outlet property="chatImage" destination="3lR-nj-WLR" id="pCO-pd-nNM"/>
+                <outlet property="chatName" destination="Btw-G8-Bnw" id="r9b-7G-SOK"/>
+                <outlet property="message" destination="LHY-il-2QT" id="dTF-ly-vgI"/>
+            </connections>
+            <point key="canvasLocation" x="427.19999999999999" y="-524.43778110944527"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="male" width="255" height="255"/>
+    </resources>
+</document>
